@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Get in touch with Apexify for a free digital marketing consultation and strategy session">
+  <meta name="theme-color" content="#0F172A">
+  <title>Contact | Apexify Digital Marketing Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen" class="loading-screen" aria-hidden="true">
+    <div class="loader"></div>
+  </div>
+
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Apexify home">
+        <i class="fas fa-chart-line logo-icon"></i>
+        <span>Apexify</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">Book Strategy Call</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary mobile-cta">Book Strategy Call</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Contact Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Get In Touch</span>
+        <h1 class="gradient-text">Let's Grow Your Business Together</h1>
+        <p class="hero-description">Ready to start? Fill out the form and we'll get back to you within 24 hours.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper glass-card">
+          <h2>Send Us a Message</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="John">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Business Email *</label>
+              <input type="email" id="email" name="email" required placeholder="john@company.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Your Company">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option value="seo">SEO Optimization</option>
+                <option value="ppc">Google Ads / PPC</option>
+                <option value="social">Social Media Marketing</option>
+                <option value="web">Website Design</option>
+                <option value="email">Email Marketing</option>
+                <option value="brand">Brand Strategy</option>
+                <option value="multiple">Multiple Services</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Describe your goals and how we can help..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" required>
+                <span>I agree to the privacy policy and terms of service</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info-wrapper">
+          <div class="contact-info-card glass-card">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Office Location</strong>
+                <p>123 Marketing Street, Suite 400<br>San Francisco, CA 94105</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p>hello@apexify.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Business Hours</strong>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder glass-card">
+            <i class="fas fa-map-marked-alt fa-3x"></i>
+            <p>Interactive map coming soon</p>
+            <p class="muted-text">123 Marketing Street, San Francisco, CA 94105</p>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links-card glass-card">
+            <h3>Follow Us</h3>
+            <div class="social-icons-large">
+              <a href="#" class="social-icon-large"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon-large"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon-large"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon-large"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon-large"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Quick Answers</h2>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">What happens after I submit the form?</button>
+            <div class="accordion-content"><p>Our team reviews your inquiry and schedules a free discovery call within 24 hours.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Is the consultation really free?</button>
+            <div class="accordion-content"><p>Yes! We offer a no-obligation strategy session to understand your needs.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Do you work with international clients?</button>
+            <div class="accordion-content"><p>Absolutely. We serve clients globally and work across time zones.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4><i class="fas fa-chart-line"></i> Apexify</h4>
+        <p>Data-driven marketing agency helping brands achieve exponential growth.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul><li><a href="services.html">SEO</a></li><li><a href="services.html">PPC</a></li><li><a href="services.html">Social Media</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Newsletter</h5>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2026 Apexify. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
